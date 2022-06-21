@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import {ThemeProvider} from "@mui/material";
+import {THEMES} from "./utils/theme";
+import {Route, Routes} from "react-router";
+import EmployeesPage from "./pages/employees/employees-page";
+import EmployeeDetailPage from "./pages/employees/employee-detail-page";
+import NotFoundPage from "./pages/404/not-found-page";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={THEMES.lightTheme}>
+      <Routes>
+        <Route element={<EmployeesPage />} path="/" />
+        <Route element={<EmployeeDetailPage />} path="/employees/:id" />
+        <Route element={<NotFoundPage />} path="*" />
+      </Routes>
+    </ThemeProvider>
   );
 }
 
