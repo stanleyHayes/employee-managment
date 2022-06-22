@@ -1,5 +1,5 @@
 import React from "react";
-import {Avatar, Card, CardContent, Stack, Tooltip, Typography} from "@mui/material";
+import {Box, Card, CardContent, CardMedia, Stack, Tooltip, Typography} from "@mui/material";
 import Contact from "./contact";
 import {Call, Info, Mail} from "@mui/icons-material";
 import {Link} from "react-router-dom";
@@ -9,31 +9,33 @@ const Employee = ({employee}) => {
         <Card
             sx={{height: '100%', backgroundColor: 'background.paper', display: 'flex', flexDirection: 'column'}}
             elevation={0}>
-            <CardContent sx={{flexGrow: 1}}>
+            <Box sx={{flexGrow: 1}}>
                 <Stack direction="column" spacing={1}>
                     <Stack direction="row" justifyContent="center">
-                        <Avatar
-                            variant="rounded"
+                        <CardMedia
+                            component="img"
                             src={employee.image}
-                            sx={{width: 150, height: 150, objectFit: 'cover', objectPosition: 'center'}}
+                            sx={{height: 200, objectFit: 'cover', objectPosition: 'top'}}
                         />
                     </Stack>
-                    <Typography align="center" variant="body1"
-                                sx={{textTransform: 'capitalize', color: 'text.title', fontWeight: 500}}>
-                        {`${employee.firstName} ${employee.lastName}`}
-                    </Typography>
-                    <Typography align="center" variant="body2"
-                                sx={{textTransform: 'capitalize', color: 'text.secondary'}}>
-                        {employee.department.name}
-                    </Typography>
+                    <CardContent>
+                        <Typography align="center" variant="body1"
+                                    sx={{textTransform: 'capitalize', color: 'text.title', fontWeight: 500}}>
+                            {`${employee.firstName} ${employee.lastName}`}
+                        </Typography>
+                        <Typography align="center" variant="body2"
+                                    sx={{textTransform: 'capitalize', color: 'text.secondary'}}>
+                            {employee.department.name}
+                        </Typography>
+                    </CardContent>
                 </Stack>
-            </CardContent>
+            </Box>
             <CardContent>
                 <Stack
                     direction="row"
                     spacing={2}
                     justifyContent="center"
-                       alignItems="center">
+                    alignItems="center">
                     <Contact
                         title={`Email ${employee.firstName} ${employee.lastName}`}
                         icon={<Mail fontSize="small" sx={{color: 'secondary.main', padding: 0.5}}/>}

@@ -7,18 +7,20 @@ import React from "react";
 const EmployeeList = ({employee}) => {
     return (
         <Card sx={{height: '100%', backgroundColor: 'background.paper'}} elevation={0}>
-            <CardContent>
-                <Stack direction="row" spacing={4}>
-                    <Stack direction="row" justifyContent="center">
-                        <Avatar
-                            variant="rounded"
-                            src={employee.image}
-                            sx={{width: 150, height: 150, objectFit: 'cover', objectPosition: 'center'}}
-                        />
-                    </Stack>
+
+            <Stack direction="row" spacing={2}>
+                <Stack direction="row" justifyContent="center">
+                    <Avatar
+                        variant="rounded"
+                        src={employee.image}
+                        sx={{width: 150, height: 150, objectFit: 'cover', objectPosition: 'center'}}
+                    />
+                </Stack>
+                <CardContent>
                     <Stack spacing={2} direction="column" justifyContent="space-between">
                         <Box>
-                            <Typography variant="body1" sx={{textTransform: 'capitalize', color: 'text.title', fontWeight: 500}}>
+                            <Typography variant="body1"
+                                        sx={{textTransform: 'capitalize', color: 'text.title', fontWeight: 500}}>
                                 {`${employee.firstName} ${employee.lastName}`}
                             </Typography>
                             <Typography variant="body2" sx={{textTransform: 'capitalize', color: 'text.secondary'}}>
@@ -50,8 +52,8 @@ const EmployeeList = ({employee}) => {
                             </Tooltip>
                         </Stack>
                     </Stack>
-                </Stack>
-            </CardContent>
+                </CardContent>
+            </Stack>
         </Card>
     )
 }
