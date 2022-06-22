@@ -7,7 +7,7 @@ const Contact = ({link, icon, title}) => {
                 <Stack
                     justifyContent="center"
                     alignItems="center"
-                    sx={{backgroundColor: 'light.secondary', borderRadius: '100%'}}>
+                    sx={{backgroundColor: 'light.secondary', borderRadius: '25%'}}>
                     {icon}
                 </Stack>
             </Link>

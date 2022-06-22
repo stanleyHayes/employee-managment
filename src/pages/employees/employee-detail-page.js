@@ -169,7 +169,7 @@ const EmployeeDetailPage = () => {
                                                             <Male
                                                                 sx={{
                                                                     backgroundColor: 'light.secondary',
-                                                                    borderRadius: '100%',
+                                                                    borderRadius: '25%',
                                                                     padding: 0.5,
                                                                     color: 'secondary.main'
                                                                 }}/>}
@@ -193,7 +193,7 @@ const EmployeeDetailPage = () => {
                                                             <Cake
                                                                 sx={{
                                                                     backgroundColor: 'light.secondary',
-                                                                    borderRadius: '100%',
+                                                                    borderRadius: '25%',
                                                                     padding: 0.5,
                                                                     color: 'secondary.main'
                                                                 }}/>}
@@ -230,7 +230,7 @@ const EmployeeDetailPage = () => {
                                                             <Call
                                                                 sx={{
                                                                     backgroundColor: 'light.secondary',
-                                                                    borderRadius: '100%',
+                                                                    borderRadius: '25%',
                                                                     padding: 0.5,
                                                                     color: 'secondary.main'
                                                                 }}/>}
@@ -257,7 +257,7 @@ const EmployeeDetailPage = () => {
                                                             <Call
                                                                 sx={{
                                                                     backgroundColor: 'light.secondary',
-                                                                    borderRadius: '100%',
+                                                                    borderRadius: '25%',
                                                                     padding: 0.5,
                                                                     color: 'secondary.main'
                                                                 }}/>}
@@ -292,7 +292,7 @@ const EmployeeDetailPage = () => {
                                                                 src={department}
                                                                 style={{
                                                                     backgroundColor: 'rgba(247,102,83,0.3)',
-                                                                    borderRadius: '100%',
+                                                                    borderRadius: '25%',
                                                                     padding: 6,
                                                                     width: 20, height: 20
                                                                 }} alt=""/>}
@@ -317,7 +317,7 @@ const EmployeeDetailPage = () => {
                                                                 src={user}
                                                                 style={{
                                                                     backgroundColor: 'rgba(247,102,83,0.3)',
-                                                                    borderRadius: '100%',
+                                                                    borderRadius: '25%',
                                                                     padding: 6,
                                                                     width: 20, height: 20
                                                                 }} alt=""/>}
@@ -342,7 +342,7 @@ const EmployeeDetailPage = () => {
                                                                 src={ranking}
                                                                 style={{
                                                                     backgroundColor: 'rgba(247,102,83,0.3)',
-                                                                    borderRadius: '100%',
+                                                                    borderRadius: '25%',
                                                                     padding: 6,
                                                                     width: 20, height: 20
                                                                 }} alt=""/>}
@@ -367,7 +367,7 @@ const EmployeeDetailPage = () => {
                                                                 src={dateJoined}
                                                                 style={{
                                                                     backgroundColor: 'rgba(247,102,83,0.3)',
-                                                                    borderRadius: '100%',
+                                                                    borderRadius: '25%',
                                                                     padding: 6,
                                                                     width: 20, height: 20
                                                                 }} alt=""/>

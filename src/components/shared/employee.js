@@ -13,12 +13,13 @@ const Employee = ({employee}) => {
                 <Stack direction="column" spacing={1}>
                     <Stack direction="row" justifyContent="center">
                         <Avatar
+                            variant="rounded"
                             src={employee.image}
                             sx={{width: 150, height: 150, objectFit: 'cover', objectPosition: 'center'}}
                         />
                     </Stack>
-                    <Typography align="center" variant="h6"
-                                sx={{textTransform: 'capitalize', color: 'text.title'}}>
+                    <Typography align="center" variant="body1"
+                                sx={{textTransform: 'capitalize', color: 'text.title', fontWeight: 500}}>
                         {`${employee.firstName} ${employee.lastName}`}
                     </Typography>
                     <Typography align="center" variant="body2"
@@ -47,7 +48,7 @@ const Employee = ({employee}) => {
                             <Stack
                                 justifyContent="center"
                                 alignItems="center"
-                                sx={{backgroundColor: 'light.secondary', borderRadius: '100%'}}>
+                                sx={{backgroundColor: 'light.secondary', borderRadius: '25%'}}>
                                 <Info fontSize="small" sx={{color: 'secondary.main', padding: 0.5}}/>
                             </Stack>
                         </Link>
